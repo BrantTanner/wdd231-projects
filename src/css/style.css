@@ -208,7 +208,6 @@ body {
 
 a:link,
 a:hover {
-  color: var(--bs-link-hover-color);
 }
 
 /* Skip links styling */
