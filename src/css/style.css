@@ -208,6 +208,7 @@ body {
 
 a:link,
 a:hover {
+  text-decoration: none;
 }
 
 /* Skip links styling */
@@ -285,6 +286,11 @@ main, footer{
   max-width: 100%;
   height: 70%;
   width: 100%;
+}
+
+.media-card__title{
+  text-decoration: none;
+  color:#000
 }
 
 footer{

@@ -11,18 +11,24 @@
         
         return `<div class="media-card">
             <div>
-                <img src="${info[0].image}" alt="${info[0].description}">
-                <h1>${info[0].name}</h1>
+                <a href="${info[0].link}">
+                    <img src="${info[0].image}" alt="${info[0].name}" class="media-card__img">
+                    <h1 class="media-card__title">${info[0].name}</h1>
+                </a>
                 <p>${info[0].description}</p>
             </div>
             <div>
-                <img src="${info[1].image}" alt=${info[1].description}'>
-                <h1>${info[1].name}</h1>
+                <a href="${info[1].link}">
+                    <img src="${info[1].image}" alt="${info[1].name}" class="media-card__img">
+                    <h1 class="media-card__title">${info[1].name}</h1>
+                </a>
                 <p>${info[1].description}</p>
             </div>
             <div>
-                <img src="${info[2].image}" alt="${info[2].description}">
-                <h1>${info[2].name}</h1>
+                <a href="${info[2].link}">
+                    <img src="${info[2].image}" alt="${info[2].name}" class="media-card__img">
+                    <h1 class="media-card__title">${info[2].name}</h1>
+                </a>
                 <p>${info[2].description}</p>
             </div>
 
