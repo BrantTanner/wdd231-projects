@@ -1,3 +1,5 @@
+const spritePath = "/images/sprite.symbol.svg";
+
 function parkInfoTemplate(info) {
         return `<a href="/" class="hero-banner_title">${info.name}</a>
         <p class="hero-banner_subtitle">
@@ -46,7 +48,7 @@ function parkInfoTemplate(info) {
         }
         return `<li class="alert">
         <svg class="icon" focusable="false" aria-hidden="true">
-            <use xlink:href="/images/sprite.symbol.svg#alert-${alertType}"></use>
+            <use xlink:href="${spritePath}#alert-${alertType}"></use>
         </svg>
         <div>
             <h3 class="alert-${alertType}">${alert.title}</h3>
