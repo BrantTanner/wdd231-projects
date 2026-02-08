@@ -1,3 +1,6 @@
+import "../css/style.css";
+import "../css/conditions.css";
+
 import { getAlertData, getParkData, getParkVisitorCenters} from "./parkService.mjs";
 
 import { getHeaderFooter } from "./setHeaderFooter.mjs";

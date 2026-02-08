@@ -1,3 +1,6 @@
+import "../css/style.css"; // we can do this because we are using Vite...
+import "../css/home.css";
+
 import { getParkData, getParkInfoLinks } from "./parkService.mjs";
 
 import { getMediaCardTemplate } from "./templates.mjs";
