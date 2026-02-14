@@ -1,3 +1,6 @@
+:root{
+    margin: 0px;
+}
 header {
     background-color: green;
     color: white;
@@ -33,8 +36,78 @@ body {
 }
 
 footer{
-    margin-top: -16px;
+    /* margin-top: -16px; */
     margin-bottom: -16px;
-    padding-top
+
+    padding-top: 10px;
     background-color: rgb(52, 51, 51);
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 20px;
+}
+figure {
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .plant-section__content {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-around;
+  }
+}
+
+/* form styling */
+
+.form-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
+}
+
+.form-error {
+  color: red;
+  margin-top: 10px;
 }
