@@ -30,7 +30,7 @@ function setActivites(activities){
 
 async function init(){
     const parkData = await getParkData();
-    const links = getInfoLinks(parkData.images);
+    getInfoLinks(parkData.images);
     const alerts = await getAlertData(parkData.parkCode);
     const visitorCenters = await getParkVisitorCenters(parkData.parkCode)
     // setIntroInfo(parkData);
