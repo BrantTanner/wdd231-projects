@@ -22,30 +22,7 @@ function setIntroInfo(data){
     
 }
 
-function enableNavigation(){
-    const nav_btn = document.querySelector("#global-nav-toggle")
 
-    nav_btn.addEventListener("click", (ev) => {
-        let target = ev.target
-
-        if(target.tagName != "BUTTON"){
-            target = target.closest("button");
-        }
-
-        const nav = document.querySelector(".global-nav");
-        nav.classList.toggle("show");
-
-        if (nav.classList.contains("show")) {
-            target.setAttribute("aria-expanded", "true");
-        }
-        else
-        {
-            target.setAttribute("aria-expanded", "false");
-        }
-    
-        console.log("toggle");
-    });
-}
 
 async function init(){
     const parkData = await getParkData();
@@ -55,6 +32,5 @@ async function init(){
     getHeaderFooter(parkData);
 }
 
-enableNavigation()
-init()
+init();
 
