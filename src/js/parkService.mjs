@@ -193,13 +193,13 @@ const parkInfoLinks =[
     },
     {
       name: "Fees and Passes &#x203A;",
-      link: "fees.html",
+      link: "conditions.html",
       image: park.images[3].url,
       description: "Learn about the fees and passes that are available."
     },
     {
       name: "Visitor Centers &#x203A;",
-      link: "visitor_centers.html",
+      link: "conditions.html",
       image: park.images[9].url,
       description: "Learn about the visitor centers in the park."
     }
@@ -231,8 +231,13 @@ export async function getParkVisitorCenters(code){
   return parkData.data;
 }
 
+export async function getParkVisitorCenterDetails(id){
+  const parkData = await getJson(`visitorcenters?id=${id}`);
+  return parkData.data[0];
+}
+
 export async function getParkData() {
-  const parkData = await getJson("parks?parkCode=yell ");
+  const parkData = await getJson("parks?parkCode=yell");
   return parkData.data[0];
 }
 
